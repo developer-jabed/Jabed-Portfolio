@@ -25,6 +25,7 @@ body{
 section{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
+    
 }
 
 .header{
@@ -260,9 +261,128 @@ span{
 }
 .service-container{
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+    margin: 50px 0;
+}
 
+
+.services-box{
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow:  0 14px 28px var(--main-color),
+    0 10px 10px var(--bg-color);
+    transition: .4s;
+    background: var(--second-bg-color);
+}
+
+
+.services-box:hover{
+    box-shadow: 0 3px 6px var(--main-color),
+    0 3px 6px var(--main-color);
+    color: var(--bg-color);
+    background: #0ef;
+    transform: translate(0px, -8px );
+}
+
+.services-box i{
+    font-size: 32px;
+    align-items: center;
+}
+
+.services-box  h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.services-box p{
+    font-weight: 500;
+}
+
+
+.services-box a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    font-size: 1rem;
+    font-weight: 600;
+    transition: .6s;
+    box-shadow: var(--second-bg-color);
+    border-radius: 25%;
+    text-decoration: none;
+    position: relative; overflow: hidden;
+    z-index: 1;
+    padding-top: 10px;
+}
+
+
+
+.services-box a:hover{
+    color: var(--main-color);
+}
+
+.services-box a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--bg-color);
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: .4s;
+}
+
+.services-box a:hover::before{
+    width: 100%;
+}
+
+
+@keyframes slideRight{
+    0%{
+        transform:translateX(-100px) ;
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes slideTop{
+    0%{
+        transform:translateY(100px) ;
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft{
+    0%{
+        transform:translateX(100px) ;
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
