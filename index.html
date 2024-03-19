@@ -1,208 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jabed's</title>
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
-  <header class="header">
-    <a href="#" class="logo">Jabed's</a>
-
-    <box-icon name='menu' id="menu-icon"></box-icon>
-    <nav class="navbar">
-      <a href="#" class="active">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
-
-
-  <section class="home" id="home">
-   <div class="home-content">
-    <h3>Hello, It's me Islam</h3>
-    <h1> Jabed Islam</h1>
-    <h3>And I'm a <span>Frontend Developer</span></h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nesciunt delectus dolorum. Possimus porro repellat assumenda rem.</p>
-    <div class="social-media">
-      <a href="https://www.facebook.com/jabedislam.mukun.73"><i class="bx bxl-facebook"></i></a>
-      <a href="https://www.instagram.com/md.jabed1780/"><i class="bx bxl-instagram"></i></a>
-      <a href="https://wa.link/rk46om"><i class="bx bxl-whatsapp"></i></a>
-      <a href="#"><i class="bx bxl-linkedin"></i></a>
-    </div >
-    <div class="btn-box">
-      <a href="#" class="btn">Download CV</a>
-      <a href="#" class="btn">Hire Me Now</a>
-    </div>
-   </div>
-
-
-   <div class="home-img">
-    <img src="images/55.png" alt="">
-   </div>
-  </section>
-
-  <!-- about section  -->
-
-  <section class="about" id="about">
-    <div class="about-img">
-      <img src="images/55.png" alt="">
-    </div>
-
-    <div class="about-content">
-      <h2 class="heading">About <span>Me</span></h2>
-      <h3>Frontend Developer</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam commodi non omnis eaque unde expedita, explicabo quia.</p>
-      
-      <div class="btn-box">
-        <a href="#" class="btn">Read More </a>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- our service section -->
-
-  <section class="service" id="service">
-    <h2 class="heading">Our <span>Services</span></h2>
-
-    <div class="service-container">
-      <div class="services-box">
-        <i class='bx bx-code-alt'></i>
-        <h3>Web Development</h3>
-        <p>Lorem ipsum dolor  elit. Reiciendis laudantium
-           cum assumendae vel  accusantium </p>
-      
-          <a href="#" class="btn-box">Read More</a>
-      
-      </div>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jabed's</title>
+    <script
+      src="https://kit.fontawesome.com/11e41873bf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Jabed's</a>
  
+      <nav class="mt-2 lg:mt-2 lg:mb-6 ">
+        <div class="navbar">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-1 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+               
 
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-red-500 font-bold ">Home</a></li>
+                    <li><a class="font-bold">About</a></li>
+                    <li><a class="font-bold">Pages</a></li>
+                    <li><a class="font-bold">Blog</a></li>
+                    <li><a class="font-bold">Contact</a></li>
 
- 
-      <div class="services-box">
-        <i class='bx bxs-paint'></i>
-        <h3>Graphics Design</h3>
-        <p>Lorem ipsum doloadg elit. Reiciendis
-           laudantium  itaque vel nisi d</p>
-      
-      
+                </ul>
+            </div>
+            <div class="navbar-end ">
+              <div class="lg:flex justify-center items-center mr-1 hidden ">
+                  
+              </div>
+              
+          </div>
+      </div>
+  </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's me </h3>
+        <h1>Jabed Islam</h1>
+        <h3>And I'm a <span>Frontend Developer</span></h3>
+        <p>
+          Lorem ipsum dolor sit amet . Quas <br />
+          nesciunt delectus dolorum. repellat assumenda rem.
+        </p>
+        <div class="social-media">
+          <a href="https://www.facebook.com/jabedislam.mukun.73"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/md.jabed1780/"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="https://wa.link/rk46om"><i class="bx bxl-whatsapp"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <div class="btn-box">
+          <a href="#" class="btn">Download CV</a>
+          <a href="#" class="btn">Hire Me Now</a>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img src="images/55.png" alt="" />
+      </div>
+    </section>
+
+    <!-- about section  -->
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/55.png" alt="" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Frontend Developer</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam commodi
+          non omnis eaque unde expedita, explicabo quia.
+        </p>
+
+        <div class="btn-box">
+          <a href="#" class="btn">Read More </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- our service section -->
+
+    <section class="service" id="service">
+      <h2 class="heading">Our <span>Services</span></h2>
+
+      <div class="service-container">
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Web Development</h3>
+          <p>
+            Lorem ipsum dolor elit. Reiciendis laudantium cum assumendae vel
+            accusantium
+          </p>
+
           <a href="#" class="btn-box">Read More</a>
-        
-      </div>
-    
+        </div>
 
+        <div class="services-box">
+          <i class="bx bxs-paint"></i>
+          <h3>Graphics Design</h3>
+          <p>
+            Lorem ipsum doloadg elit. Reiciendis laudantium itaque vel nisi d
+          </p>
 
-
-
-      <div class="services-box">
-        <i class='bx bx-bar-chart-alt'></i>
-        <h3>UI/UX Development</h3>
-        <p>Lorem ipsum dolor sit amet, Reiciendis laudantium cum assumenda
-           debitis doloribus</p>
-      
           <a href="#" class="btn-box">Read More</a>
-        
-      </div>
-    
-    </div>
-    
-  </section>
+        </div>
 
-  <!-- Portfolio section Design -->
+        <div class="services-box">
+          <i class="bx bx-bar-chart-alt"></i>
+          <h3>UI/UX Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet, Reiciendis laudantium cum assumenda
+            debitis doloribus
+          </p>
 
-  <section class="portfolio" id="portfolio">
-    <h2 class="heading">Latest <span>Projects</span></h2>
-    
-
-    <div class="portfolio-container">
-      <div class="portfolio-box">
-        <img src="images/project1.jpg" alt="">
-        <div class="portfolio-layer">
-          <h4>Web Design</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, </p>
-          <a href="#"><i class='bx bx-link-external'></i></a>
+          <a href="#" class="btn-box">Read More</a>
         </div>
       </div>
+    </section>
 
+    <!-- Portfolio section Design -->
 
-      <div class="portfolio-box">
-        <img src="images/project2.jpg" alt="">
-        <div class="portfolio-layer">
-          <h4>Video Editing</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,</p>
-          <a href="#"><i class='bx bx-link-external'></i></a>
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="images/project1.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/project2.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Video Editing</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/project3.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>UI UX</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/project7.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Graphics Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/project5.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Portfolio</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/project4.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Fullstack</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
         </div>
       </div>
+    </section>
 
+    <!-- my skill section design -->
 
-      <div class="portfolio-box">
-        <img src="images/project3.jpg" alt="">
-        <div class="portfolio-layer">
-          <h4>UI UX</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, </p>
-          <a href="#"><i class='bx bx-link-external'></i></a>
+    <section class="skill">
+      <h2 class="heading">My <span>Skill</span></h2>
+
+      <div class="skill-container">
+        <h2 class="heading"></h2>
+        <div class="bar-line">
+          <div class="bar">
+            <progress
+              class="progress progress-success w-56"
+              value="85"
+              max="100"
+            ></progress>
+            <progress
+              class="progress progress-success w-56"
+              value="90"
+              max="100"
+            ></progress>
+            <progress
+              class="progress progress-success w-56"
+              value="88"
+              max="100"
+            ></progress>
+            <progress
+              class="progress progress-success w-56"
+              value="78"
+              max="100"
+            ></progress>
+            <progress
+              class="progress progress-success w-56"
+              value="85"
+              max="100"
+            ></progress>
+          </div>
+
+          <div class="radial-line ">
+            <div class="radial-progress" style="--value: 85" role="progressbar">
+              85%
+            </div>
+            <div class="radial-progress" style="--value: 90" role="progressbar">
+              90%
+            </div>
+            <div class="radial-progress" style="--value: 88" role="progressbar">
+              88%
+            </div>
+            <div class="radial-progress" style="--value: 78" role="progressbar">
+              78%
+            </div>
+            <div
+              class="radial-progress"
+              style="--value: 85"
+              role="progressbar"
+            >
+              85%
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
+    <!-- Contact section design  -->
 
-      <div class="portfolio-box">
-        <img src="images/project7.jpg" alt="">
-        <div class="portfolio-layer">
-          <h4>Graphics Design</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,</p>
-          <a href="#"><i class='bx bx-link-external'></i></a>
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" id="name" placeholder="Full Name" />
+          <input type="email" id="email" placeholder="E-mail Address" />
         </div>
-      </div>
-
-
-      <div class="portfolio-box">
-        <img src="images/project5.jpg" alt="">
-        <div class="portfolio-layer">
-          <h4>Portfolio</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,</p>
-          <a href="#"><i class='bx bx-link-external'></i></a>
+        <div class="input-box">
+          <input type="number" id="mobail" placeholder="Mobail Number" />
+          <input type="text" id="subject" placeholder="E-mail Subject" />
         </div>
-      </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
 
-      <div class="portfolio-box">
-        <img src="images/project4.jpg" alt="">
-        <div class="portfolio-layer">
-          <h4>Fullstack</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,.</p>
-          <a href="#"><i class='bx bx-link-external'></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- footer section design  -->
 
+    <footer class="footer p-10 bg-base-200 text-base-content">
+      <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Web Development</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Education</h6>
+        <a class="link link-hover">About Me</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+      <form>
+        <h6 class="footer-title">Newsletter</h6>
+        <fieldset class="form-control w-80">
+          <label class="label">
+            <span class="label-text">Enter your email address</span>
+          </label>
+          <div class="join">
+            <input
+              type="text"
+              placeholder="username@site.com"
+              class="input input-bordered join-item"
+            />
+            <button class="btn btn-primary join-item">Subscribe</button>
+          </div>
+        </fieldset>
+      </form>
+    </footer>
 
-  <!-- Contact section design  -->
+    <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+      <aside>
+        <p>Copyright © 2024 - All right reserved by Jabed Islam</p>
+      </aside>
+    </footer>
 
-   <section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me!</span></h2>
-
-
-    <form action="#">
-      <div class="input-box">
-        <input type="text" id="name" placeholder="Full Name">
-        <input type="email" id="email" placeholder="E-mail Address">
-      </div>
-      <div class="input-box">
-        <input type="number" id="mobail" placeholder="Mobail Number">
-        <input type="text" id="subject" placeholder="E-mail Subject">
-      </div>
-      <textarea name="" id="" cols="30" rows="10"  placeholder="Your Message"></textarea>
-      <input type="submit" value="Send Message" class="btn">
-    </form>
-   </section>
-  
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
