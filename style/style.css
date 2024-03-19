@@ -643,7 +643,23 @@ span{
     .portfolio-layer h4{
         font-size: 2rem;
     }
-    
+    .home{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .home-img img{
+        width: 60%;
+        margin-top: 10px;
+    }
+    .about{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .about-img img{
+        width: 60%;
+        margin-top: 10px;
+    }
  
  }
 
