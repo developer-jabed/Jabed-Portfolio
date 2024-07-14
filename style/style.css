@@ -617,7 +617,7 @@ span{
 @media screen and (max-width:600px) {
 
     body {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
 /* 
@@ -631,7 +631,7 @@ span{
 
     .services-box{
         flex-wrap: wrap;
-        width: 80%;
+        width: 90%;
         height: auto;
     }
     .portfolio-container{
