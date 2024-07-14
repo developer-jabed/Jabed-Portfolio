@@ -362,6 +362,7 @@ span{
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    padding: 15px;
     width: 150px;
     height: 100%;
     background: var(--main-color);
@@ -370,7 +371,7 @@ span{
     font-weight: 600;
     transition: .6s;
     box-shadow: var(--second-bg-color);
-    border-radius: 15%;
+    border-radius: 5%;
     text-decoration: none;
     position: relative; overflow: hidden;
     z-index: 1;
